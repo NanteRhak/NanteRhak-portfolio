@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nante Rhak - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #2c3e50, #1a1a2e);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: #2980b9;
+            margin: 20px 0 10px;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .contact-info a:hover {
+            color: #3498db;
+        }
+        
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 300px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .skill-category h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .project {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .project-detail {
+            margin: 10px 0;
+        }
+        
+        .project-detail strong {
+            color: #2980b9;
+        }
+        
+        .goal {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 20px;
+            background: #e8f4fc;
+            border-radius: 10px;
+            border: 1px solid #3498db;
+        }
+        
+        .goal strong {
+            color: #2c3e50;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nante Rhak</h1>
+        <p class="subtitle">Aspiring Penetration Tester & Systems Administrator</p>
+        <div class="contact-info">
+            <a href="https://github.com/NanteRhak" target="_blank">🐱 GitHub.com/NanteRhak</a>
+        </div>
+    </header>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <p>A passionate and self-motivated individual with a strong interest in penetration testing and system administration. Through dedicated self-study and hands-on project work, I have developed a solid foundation in core IT concepts, security practices, and scripting automation. I am eager to apply my skills in a professional setting to solve complex problems and contribute to security resilience.</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming & Scripting</h3>
+                <ul>
+                    <li><strong>Python:</strong> Automation scripts, socket programming, GUI development (Tkinter), cryptography concepts</li>
+                    <li><strong>Bash:</strong> File manipulation, permission management, task automation</li>
+                    <li><strong>C:</strong> Understanding of core programming concepts and memory management</li>
+                    <li><strong>SQL:</strong> Proficient in CRUD operations and database querying</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Systems & Tools</h3>
+                <ul>
+                    <li><strong>Linux (Debian/Ubuntu):</strong> Advanced system administration, network maintenance, user and permission management</li>
+                    <li><strong>Windows:</strong> Intermediate system configuration and management</li>
+                    <li><strong>Pentesting Tools:</strong> Practical experience with Metasploit Framework (msfvenom, msfconsole, meterpreter)</li>
+                    <li><strong>Recovery Tools:</strong> Data recovery and partition management using TestDisk</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Theoretical Knowledge</h3>
+                <ul>
+                    <li><strong>Mathematics:</strong> Algorithm design, cryptography, calculus, and statistics</li>
+                    <li><strong>Web Technologies:</strong> Front-end development (HTML, CSS, JavaScript)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Cross-Platform File Sharing with Samba</h3>
+            <div class="project-detail"><strong>Goal:</strong> To enable seamless file transfer between Windows and Linux systems on a local network.</div>
+            <div class="project-detail"><strong>Action:</strong> Configured a Samba server on a Debian machine, defined a shared directory, and implemented user authentication and access controls using Linux file permissions (<code>chmod</code>, <code>chown</code>).</div>
+            <div class="project-detail"><strong>Result:</strong> Successfully established a secure and reliable shared network drive accessible from Windows Explorer.</div>
+        </div>
+        
+        <div class="project">
+            <h3>Penetration Testing Lab: Reverse Shell payload</h3>
+            <div class="project-detail"><strong>Goal:</strong> To understand the process of exploit development and remote code execution in a controlled, isolated lab environment.</div>
+            <div class="project-detail"><strong>Action:</strong> Generated a Windows reverse TCP payload using <code>msfvenom</code>, set up a multi/handler listener in <code>msfconsole</code>, and executed the payload on a target virtual machine.</div>
+            <div class="project-detail"><strong>Result:</strong> Gained hands-on experience with the Metasploit framework, achieving a remote Meterpreter session and exploring post-exploitation techniques.</div>
+        </div>
+        
+        <div class="project">
+            <h3>Data Recovery using TestDisk</h3>
+            <div class="project-detail"><strong>Goal:</strong> To recover accidentally deleted files and lost partitions from a healthy storage drive.</div>
+            <div class="project-detail"><strong>Action:</strong> Utilized TestDisk to analyze the drive's structure, scan for lost partitions, and recover specific files to a separate storage device.</div>
+            <div class="project-detail"><strong>Result:</strong> Successfully restored critical data, demonstrating problem-solving skills and understanding of filesystem structures.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Goal</h2>
+        <p class="goal">To secure an <strong>entry-level position</strong> or <strong>apprenticeship</strong> in <strong>cybersecurity</strong> or <strong>system administration</strong>. I am looking for a role that offers mentorship and hands-on experience, allowing me to contribute to real-world projects while deepening my expertise in penetration testing, DevOps, and IoT security.</p>
+    </div>
+
+    <footer>
+        <p>© 2023 Nante Rhak | Portfolio</p>
+    </footer>
+</body>
+</html>
